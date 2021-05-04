@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const namesToRemove = process.argv.slice(2);
 
-const peoplesPath = path.join(__dirname, "people");
+const peoplesPath = path.join(__dirname, "peoples");
 
 if (!namesToRemove.length) {
   fs.readdirSync(peoplesPath).forEach(file => {
